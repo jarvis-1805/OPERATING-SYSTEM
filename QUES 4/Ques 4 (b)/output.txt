@@ -1,0 +1,11 @@
+OUTPUT:
+
+> g++ Ques4b.cpp -o Ques4b && ./Ques4b
+
+Parent executed
+Process ID : 101
+Parent Process ID : 12
+
+Child executed
+Process ID : 102
+Parent Process ID : 101

@@ -1,0 +1,9 @@
+OUTPUT:
+
+>g++ Ques4a.cpp -o Ques4a && ./Ques4a
+
+Process ID : 93
+Parent Process ID : 12
+
+Process ID : 94
+Parent Process ID : 93
