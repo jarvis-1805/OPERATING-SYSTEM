@@ -1,0 +1,18 @@
+OUTPUT:
+
+
+Enter the no. of processes : 5
+
+Enter the burst time of process 1 : 2
+Enter the burst time of process 2 : 4
+Enter the burst time of process 3 : 3
+Enter the burst time of process 4 : 6
+Enter the burst time of process 5 : 10
+
+Waiting Time: P1 = 0
+              P2 = 2
+              P3 = 6
+              P4 = 9
+              P5 = 15
+              
+Average Waiting TIme: 6.4
