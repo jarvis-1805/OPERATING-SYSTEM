@@ -1,28 +1,31 @@
 #include <iostream>
 #define MAX 100
-
 using namespace std;
 
 class FCFS
 {
   public:
-    int wt[MAX];
+    double wt[MAX];
     
-    void waitingTime(int, int *);
+    void waitingTime(int, double *, double *);
     void avgWaitingTime(int);
+    void turnAroundTime(int, double *, double *);
+    void avgTurnAroundTime(int);
 };
 
-void FCFS::waitingTime(int n, int *bt)
+void FCFS::waitingTime(int n, double *bt, double *at)
 {
-  int temp;
-  wt[0] = 0;
+  double b=0.0;
+  //b = bt[0];
+  wt[0] = at[0];
   for(int i=0; i<n; i++)
   {
-    wt[i+1] = bt[i] + wt[i];
+    b = b + bt[i];
+    wt[i+1] = b - at[i+1];
   }
   for(int j=0; j<n; j++)
   {
-    cout << "P" << j+1 << " = " << wt[j] << "\n              ";
+    cout << "P" << j+1 << " =     " << at[j] << "\t\t" << bt[j] << "\t\t" << wt[j] << "\n";
   }
 }
 
@@ -44,14 +47,17 @@ int main()
   cout << "\nEnter the no. of processes : ";
   cin >> n;
   cout << endl;
-  int bt[n];
+  double bt[n], at[n];
   for(int i=0; i<n; i++)
   {
+    cout << "Enter the arrival time of process " << i+1 << " : ";
+    cin >> at[i];
     cout << "Enter the burst time of process " << i+1 << " : ";
     cin >> bt[i];
-  }
-  cout << "\nWaiting Time: ";
-  ob.waitingTime(n, bt);
+    cout << endl;
+  }  
+  cout << "\n\tArrival Time\tBurst Time\tWaiting Time\n";
+  ob.waitingTime(n, bt, at);
   cout << "\nAverage Waiting TIme: ";
   ob.avgWaitingTime(n);
   cout << endl;
