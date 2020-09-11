@@ -1,18 +1,24 @@
 OUTPUT:
 
 
-Enter the no. of processes : 5
+Enter the unit: ms
 
-Enter the burst time of process 1 : 2
+Enter the no. of processes : 3
+
+Enter the arrival time of process 1 : 0.0 
+Enter the burst time of process 1 : 8
+
+Enter the arrival time of process 2 : 0.4
 Enter the burst time of process 2 : 4
-Enter the burst time of process 3 : 3
-Enter the burst time of process 4 : 6
-Enter the burst time of process 5 : 10
 
-Waiting Time: P1 = 0
-              P2 = 2
-              P3 = 6
-              P4 = 9
-              P5 = 15
-              
-Average Waiting TIme: 6.4
+Enter the arrival time of process 3 : 1.0
+Enter the burst time of process 3 : 1
+
+
+Process Id      Arrival Time    Burst Time      Waiting Time    Turn Around Time
+    1           0.00ms           8.00ms           0.00ms           8.00ms
+    2           0.40ms           4.00ms           7.60ms          11.60ms
+    3           1.00ms           1.00ms          11.00ms          12.00ms
+
+Average Waiting Time: 6.20ms
+Average Turn Around Time: 10.53ms
