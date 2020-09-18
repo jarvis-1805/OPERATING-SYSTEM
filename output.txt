@@ -1,0 +1,9 @@
+root@kali:/# gcc memInfo.c -o memInfo && ./memInfo
+
+Memory Information:
+MemTotal:        3068544 kB
+MemFree:         1318272 kB
+MemAvailable:    2011544 kB
+root@kali:/# 
+
+
