@@ -1,0 +1,9 @@
+root@kali:/# gcc cpu.c -o cpu && ./cpu
+
+Kernel Version:
+5.6.0-kali2-amd64
+
+CPU type & Model:
+model name      : Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+root@kali:/# 
+
