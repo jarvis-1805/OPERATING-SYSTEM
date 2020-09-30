@@ -125,7 +125,7 @@ int main()
   }
 
   ob.sort(n);
-  cout << "\nProcess Id\t\tArrival Time\tBurst Time\t\tWaiting        Time\tTurn Around Time\n";
+  cout << "\nProcess Id\tArrival Time\tBurst Time\tWaiting Time\tTurn Around Time\n";
   ob.waitingTime(n);
   ob.turnAroundTime(n);
   cout << "\nAverage Waiting Time: ";
