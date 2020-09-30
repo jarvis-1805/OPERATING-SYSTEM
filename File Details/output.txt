@@ -1,0 +1,7 @@
+ gcc fileInfo.c -o fileInfo && ./fileInfo fileInfo.c
+
+Given File Name: fileInfo.c
+Ownered: 1000
+gid: 1000
+Access Permission: 33188
+Access Time: 1601485657
