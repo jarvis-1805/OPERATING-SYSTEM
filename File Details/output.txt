@@ -1,7 +1,22 @@
- gcc fileInfo.c -o fileInfo && ./fileInfo fileInfo.c
+root@kali:/# gcc file_info.c -o file_info && ./file_info server.py memInfo.c 
 
-Given File Name: fileInfo.c
-Ownered: 1000
-gid: 1000
+Given file name: server.py
+File access: 
+File size: 3565
+Created on: 9-7-2020 10:36:33
+Modified on: 9-7-2020 10:36:33
+Ownered: 0
+gid: 0
+Access Permission: 33248
+Access Time: 1601832413
+
+
+Given file name: memInfo.c
+File access: read 
+File size: 222
+Created on: 18-8-2020 7:51:50
+Modified on: 18-8-2020 7:51:50
+Ownered: 0
+gid: 0
 Access Permission: 33188
-Access Time: 1601485657
+Access Time: 1601832413
