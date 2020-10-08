@@ -108,13 +108,14 @@ int main()
   cout << "\nProcess Id\tArrival Time\tBurst Time\tCompletetion Time\tWaiting Time\tTurn Around Time\n";
   for(int j=0; j<n; j++)
   {
+    int x = ob.pid[j];
     cout << fixed << setprecision(2);
     cout << setw(5) << ob.pid[j]
-        << setw(16) << ob.at[j] << ob.unit
-        << setw(15) << ob.bt[j] << ob.unit
-        << setw(15) << ob.ct[j] << ob.unit
-        << setw(20) << ob.wt[j] << ob.unit
-        << setw(20) << ob.tt[j] << ob.unit << "\n";
+        << setw(16) << ob.at[x-1] << ob.unit
+        << setw(15) << ob.bt[x-1] << ob.unit
+        << setw(15) << ob.ct[x-1] << ob.unit
+        << setw(20) << ob.wt[x-1] << ob.unit
+        << setw(20) << ob.tt[x-1] << ob.unit << "\n";
   }
   cout << "\nAverage Waiting Time: ";
   ob.avg_waiting_time(n);
