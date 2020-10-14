@@ -1,6 +1,7 @@
 #include<iostream>
 #include<iomanip>
 #include<stdio.h>
+#include<conio.h>
 #define MAX 100
 
 using namespace std;
@@ -134,5 +135,5 @@ int main()
   cout << "\nAverage Turn Around Time: ";
   ob.avg_turn_around_time(n);
   cout << endl;
-  getchar();
+  getch();
 }
