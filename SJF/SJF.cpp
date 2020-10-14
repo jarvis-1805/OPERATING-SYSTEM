@@ -106,6 +106,7 @@ int main()
 
   ob.calculate(n);
   cout << "\nProcess Id\tArrival Time\tBurst Time\tCompletetion Time\tWaiting Time\tTurn Around Time\n";
+  cout << "=============================================================================================================\n";
   for(int j=0; j<n; j++)
   {
     int x = ob.pid[j];
